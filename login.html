@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SWAMI VIVEKANANDA UNIVERSITY-Fees Payment System</title>
+  <link rel="shortcut icon" href="c:\Users\Rajesh Patra barman\OneDrive\Desktop\MAIN FINAL YEAR PROJECT\svu1-removebg-preview.png">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+    background: #243b55;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  /* .link{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      border: none;
+      z-index: -1;
+    } */
+    .login-container {
+      background: rgba(0, 0, 0,.5);
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 15px 25px rgba(0, 0,0,.5);
+      width: 350px;
+    }
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #fff;
+    }
+    .login-container label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #fff;
+    }
+    .login-container input {
+      width: 100%;
+      padding:  0;
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 30px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      outline: none;
+      background: transparent;
+    }
+    
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 6px;
+      /* color: white; */
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .login-container button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<!-- <body background="svu login.jpeg"> -->
+    <body>
+           <a href="your_website_url">Click Here</a>
+        <!-- <iframe class="link" src="https://skybox.blockadelabs.com/e/6f3a02712c0e0c82fc696bf77acdaa5a" 
+        width=700 height=700 style="border:0;" allow="fullscreen"></iframe> -->
+
+  <div class="login-container">
+    <fieldset>
+    <legend><h2>REGISTER</h2></legend>
+    <form id="registrationForm">
+      <label for="username">User Name</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="email">Email ID</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone No</label>
+      <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="1234567890">
+
+      <label for="roll">University Roll No</label>
+      <input type="text" id="roll" name="roll" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  </fieldset>
+
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      window.location.href = "final.html";
+    });
+  </script>
+
+</body>
+</html>
